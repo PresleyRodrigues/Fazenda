@@ -1,13 +1,12 @@
-// Função para compartilhar produtos no WhatsApp
-function compartilharWhatsApp(produto) {
-    const mensagem = `Confira este produto da Fazenda Alberto Vidal: ${produto}`;
-    const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(mensagem)}`;
-    window.open(url, '_blank');
-}
-
-// Validação do formulário de contato
-document.getElementById('form-contato').addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Mensagem enviada com sucesso!');
-    this.reset();
+document.addEventListener("DOMContentLoaded", function() {
+  // Aqui você pode adicionar funcionalidades interativas extras
+  console.log("Site carregado com sucesso.");
+  
+  // Exemplo: ação do botão de compartilhamento (atualmente apenas um alerta)
+  const shareButtons = document.querySelectorAll('.share-btn');
+  shareButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      alert('Compartilhamento via WhatsApp ainda não configurado.');
+    });
+  });
 });
