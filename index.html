@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Fazenda Alberto Vidal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    /* Navegação fixa */
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      border-radius: 5px;
+    }
+    /* Header com imagem de fundo */
+    header {
+      background: url('https://via.placeholder.com/1920x600?text=Fazenda+Alberto+Vidal') no-repeat center center/cover;
+      height: 600px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      margin-top: 60px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.5rem;
+      max-width: 600px;
+    }
+    /* Seções */
+    section {
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .section-title p {
+      font-size: 1.2rem;
+      color: #777;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .grid-item {
+      flex: 1 1 300px;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    /* Contato */
+    .contato-info {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    /* Rodapé */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    /* Responsividade */
+    @media(max-width: 768px) {
+      header {
+        height: 400px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#producao">Produção</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Header / Home -->
+  <header id="home">
+    <h1>Fazenda Alberto Vidal</h1>
+    <p>Localizada em Malanjo, um exemplo de tradição e inovação na produção sustentável.</p>
+  </header>
+  
+  <!-- Sobre a Fazenda -->
+  <section id="sobre">
+    <div class="container">
+      <div class="section-title">
+        <h2>Sobre a Fazenda</h2>
+        <p>Conheça nossa história e valores</p>
+      </div>
+      <p>A Fazenda Alberto Vidal é sinônimo de tradição e inovação. Localizada em Malanjo, contamos com anos de experiência na criação de animais e na produção de alimentos de alta qualidade. Priorizamos o bem-estar animal, o manejo sustentável e o respeito à terra, garantindo que cada produto reflita nosso compromisso com a excelência e a sustentabilidade.</p>
+    </div>
+  </section>
+  
+  <!-- Áreas de Produção -->
+  <section id="producao" style="background: #e9ecef;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nossas Áreas de Produção</h2>
+        <p>Descubra nossas especialidades</p>
+      </div>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>Tratamento de Animais</h3>
+          <p>Garantimos um ambiente saudável e ético, onde cada animal é cuidado com zelo e respeito.</p>
+        </div>
+        <div class="grid-item">
+          <h3>Produção de Alimentos</h3>
+          <p>Produzimos alimentos frescos e orgânicos, utilizando técnicas modernas e sustentáveis para preservar o sabor e a qualidade.</p>
+        </div>
+        <div class="grid-item">
+          <h3>Área Agrícola</h3>
+          <p>Com vasta extensão de terra, cultivamos hortaliças, grãos e outros produtos, integrando tradição e inovação no campo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contato -->
+  <section id="contato">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contato</h2>
+        <p>Fale conosco</p>
+      </div>
+      <div class="contato-info">
+        <p>Telefone: <strong>(+244) 1234-5678</strong></p>
+        <p>E-mail: <strong>contato@fazendaalbertovidal.com</strong></p>
+        <p>Endereço: Rua Exemplo, nº 123, Malanjo, Angola</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Fazenda Alberto Vidal. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
