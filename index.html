@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazenda Alberto Vidal</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">Fazenda Alberto Vidal</div>
+            <div class="logo">🌾 Fazenda Alberto Vidal</div>
             <ul class="menu">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#produtos">Produtos</a></li>
@@ -21,8 +20,8 @@
     </header>
 
     <section class="hero">
-        <video autoplay loop muted>
-            <source src="videos/frutas.mp4" type="video/mp4">
+        <video autoplay loop muted id="videoBackground">
+            Seu navegador não suporta vídeos.
         </video>
         <div class="overlay">
             <h1>Bem-vindo à Fazenda Alberto Vidal</h1>
@@ -33,25 +32,12 @@
 
     <section id="sobre" class="content">
         <h2>Sobre Nós</h2>
-        <p>A Fazenda Alberto Vidal é especializada na produção sustentável de frutas, vegetais e pecuária. Trabalhamos com tecnologias modernas e respeito ao meio ambiente.</p>
+        <p>A Fazenda Alberto Vidal é especializada na produção sustentável de frutas, vegetais e pecuária.</p>
     </section>
 
     <section id="produtos" class="content">
         <h2>Nossos Produtos</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="images/morangos.jpg" alt="Morangos">
-                <h3>Morangos Orgânicos</h3>
-                <p>Produzidos sem agrotóxicos, direto da fazenda.</p>
-                <button class="share-btn" data-text="Veja nossos morangos orgânicos!" data-url="https://fazendaalbertovidal.com/produtos">Compartilhar</button>
-            </div>
-            <div class="card">
-                <img src="images/macas.jpg" alt="Maçãs">
-                <h3>Maçãs Frescas</h3>
-                <p>Colhidas no ponto ideal de maturação.</p>
-                <button class="share-btn" data-text="Conheça nossas maçãs frescas!" data-url="https://fazendaalbertovidal.com/produtos">Compartilhar</button>
-            </div>
-        </div>
+        <div id="galeria" class="grid"></div>
     </section>
 
     <section id="contato" class="content">
