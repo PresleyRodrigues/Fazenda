@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Produção - Fazenda Alberto Vidal</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - Fazenda Alberto Vidal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <h1>Nossas Áreas de Produção</h1>
-    </header>
-    <section class="container">
-        <h2 id="animais">Criação de Animais</h2>
-        <p>Cuidamos bem dos nossos animais...</p>
-
-        <h2 id="alimentos">Produção de Alimentos</h2>
-        <p>Alimentos de alta qualidade...</p>
-
-        <h2 id="agricultura">Agricultura</h2>
-        <p>Práticas modernas de cultivo...</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Fazenda Alberto Vidal</p>
-    </footer>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Fazenda Alberto Vidal</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Produtos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="page-header">
+    <h1>Nossos Produtos</h1>
+    <p>Produtos naturais e de alta qualidade diretamente da terra</p>
+  </section>
+  
+  <section class="products-section">
+    <!-- Cartão 1 – Frutas Naturais -->
+    <div class="product-card">
+      <!-- Imagem dinâmica via Unsplash -->
+      <img src="https://source.unsplash.com/featured/?fruits,nature" alt="Frutas Naturais">
+      <h2>Frutas Naturais</h2>
+      <p>Colhidas com cuidado e frescor direto da nossa fazenda.</p>
+      <button class="share-btn"><i class="fab fa-whatsapp"></i> Compartilhar</button>
+    </div>
+    <!-- Cartão 2 – Vegetais Orgânicos -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/featured/?vegetables,organic" alt="Vegetais Orgânicos">
+      <h2>Vegetais Orgânicos</h2>
+      <p>Produtos frescos e saudáveis para sua alimentação.</p>
+      <button class="share-btn"><i class="fab fa-whatsapp"></i> Compartilhar</button>
+    </div>
+    <!-- Cartão 3 – Produtos Lácteos -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/featured/?dairy,nature" alt="Produtos Lácteos">
+      <h2>Produtos Lácteos</h2>
+      <p>Leite, queijos e outros derivados produzidos com cuidado.</p>
+      <button class="share-btn"><i class="fab fa-whatsapp"></i> Compartilhar</button>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Fazenda Alberto Vidal. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
