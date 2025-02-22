@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Fazenda Alberto Vidal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link para Font Awesome para ícones de redes sociais -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     /* Reset básico */
     * {
@@ -96,10 +98,60 @@
       padding: 20px;
       border-radius: 10px;
     }
-    /* Contato */
+    /* Botão de compartilhar no WhatsApp */
+    .btn-share {
+      background: #25d366;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .btn-share:hover {
+      opacity: 0.9;
+    }
+    /* Contato e formulário */
     .contato-info {
       text-align: center;
       font-size: 1.1rem;
+    }
+    .social-icons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      opacity: 0.8;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 100%;
+    }
+    form button {
+      padding: 10px;
+      background: #ff6f61;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    form button:hover {
+      background: #ff4c3b;
     }
     /* Rodapé */
     footer {
@@ -174,6 +226,9 @@
           <p>Com vasta extensão de terra, cultivamos hortaliças, grãos e outros produtos, integrando tradição e inovação no campo.</p>
         </div>
       </div>
+      <div style="text-align: center;">
+        <a href="#" class="btn-share"><i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp</a>
+      </div>
     </div>
   </section>
   
@@ -188,6 +243,22 @@
         <p>Telefone: <strong>(+244) 1234-5678</strong></p>
         <p>E-mail: <strong>contato@fazendaalbertovidal.com</strong></p>
         <p>Endereço: Rua Exemplo, nº 123, Malanjo, Angola</p>
+      </div>
+      <div class="social-icons">
+        <h3>Siga-nos nas redes sociais</h3>
+        <a href="#" title="Facebook" style="color: #3b5998;"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" title="WhatsApp" style="color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" title="Instagram" style="color: #E4405F;"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="TikTok" style="color: #000000;"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div style="margin-top: 40px; text-align: center;">
+        <h3>Envie-nos um E-mail</h3>
+        <form action="#" method="post">
+          <input type="text" name="nome" placeholder="Seu Nome" required>
+          <input type="email" name="email" placeholder="Seu E-mail" required>
+          <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar E-mail</button>
+        </form>
       </div>
     </div>
   </section>
