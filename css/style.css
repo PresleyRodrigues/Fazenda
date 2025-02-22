@@ -21,6 +21,9 @@ body {
 header {
     background: #4CAF50;
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo img {
@@ -45,9 +48,9 @@ nav ul li a {
 
 /* Banner */
 .banner {
-    background: url('imagens/banner.jpg') no-repeat center center/cover;
+    background: url('https://source.unsplash.com/1600x900/?farm,agriculture') no-repeat center center/cover;
     color: #fff;
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
 }
 
@@ -67,6 +70,7 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Sobre Nós */
@@ -77,6 +81,7 @@ nav ul li a {
 
 .sobre img {
     max-width: 100%;
+    border-radius: 10px;
     margin-top: 20px;
 }
 
@@ -97,13 +102,14 @@ nav ul li a {
     background: #fff;
     padding: 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .produto img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /* Galeria */
@@ -121,7 +127,12 @@ nav ul li a {
 .galeria-imagens img {
     width: 30%;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.05);
 }
 
 /* Contato */
@@ -153,6 +164,7 @@ nav ul li a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* Rodapé */
@@ -163,7 +175,12 @@ footer {
     text-align: center;
 }
 
-footer .redes-sociais img {
-    height: 30px;
+footer .redes-sociais {
+    margin-top: 10px;
+}
+
+footer .redes-sociais a {
+    color: #fff;
     margin: 0 10px;
+    font-size: 1.5rem;
 }
