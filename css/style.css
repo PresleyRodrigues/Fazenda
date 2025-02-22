@@ -13,16 +13,11 @@ header {
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-}
-
 .menu {
     list-style: none;
     display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .menu li {
@@ -55,19 +50,11 @@ video {
     text-align: center;
 }
 
-.btn {
-    padding: 10px 20px;
-    background: green;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 .grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
 }
 
 .card {
@@ -81,13 +68,4 @@ video {
 .card img {
     width: 100%;
     border-radius: 8px;
-}
-
-.share-btn {
-    background: #25D366;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
 }
