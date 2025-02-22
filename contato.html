@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Contato - Fazenda Alberto Vidal</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Fazenda Alberto Vidal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <h1>Entre em Contato</h1>
-    </header>
-    <section class="container">
-        <p>Email: contato@fazendaalbertovidal.com</p>
-        <p>WhatsApp: +244 999 999 999</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Fazenda Alberto Vidal</p>
-    </footer>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Fazenda Alberto Vidal</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Produtos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="page-header">
+    <h1>Contato</h1>
+    <p>Entre em contato conosco</p>
+  </section>
+  
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Informações de Contato</h2>
+      <p>Telefone: <strong>(+244) 1234-5678</strong></p>
+      <p>Email: <strong>contato@fazendaalbertovidal.com</strong></p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h2>Envie um E-mail</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Fazenda Alberto Vidal. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
