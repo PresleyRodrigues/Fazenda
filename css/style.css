@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.hero {
+    background: url('../images/fazenda.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: green;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
