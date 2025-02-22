@@ -1,85 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazenda Alberto Vidal</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazenda Alberto Vidal - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Menu Fixo -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">🌍 Home</a></li>
-                <li><a href="#sobre">🏡 Sobre</a></li>
-                <li><a href="#produtos">🍏 Produtos</a></li>
-                <li><a href="#contato">📞 Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Seção Principal com Vídeo de Fundo -->
-    <section id="home" class="hero">
-        <video autoplay muted loop id="video-background">
-            <source src="videos/frutas.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos HTML5.
-        </video>
-        <div class="hero-content">
-            <h1>🌾 Fazenda Alberto Vidal 🌾</h1>
-            <p>Produtos frescos e orgânicos diretamente da nossa fazenda.</p>
-        </div>
-    </section>
-
-    <!-- Seção Sobre a Fazenda -->
-    <section id="sobre" class="sobre">
-        <h2>🏡 Sobre a Fazenda</h2>
-        <p>
-            A Fazenda Alberto Vidal, localizada em Malanje, é dedicada à produção sustentável de alimentos orgânicos e à criação de animais saudáveis. Utilizamos tecnologia agrícola moderna para garantir qualidade e respeito ao meio ambiente.
-        </p>
-    </section>
-
-    <!-- Seção de Produtos -->
-    <section id="produtos" class="produtos">
-        <h2>🍎 Nossos Produtos</h2>
-        <div class="produtos-container">
-            <div class="produto-card">
-                <img src="images/produtos/morangos.jpg" alt="Morangos Orgânicos">
-                <h3>🍓 Morangos Orgânicos</h3>
-                <p>Produzidos de forma natural e sustentável.</p>
-                <button onclick="compartilharWhatsApp('Morangos Orgânicos')">🟢 Compartilhar</button>
-            </div>
-            <div class="produto-card">
-                <img src="images/produtos/macas.jpg" alt="Maçãs Frescas">
-                <h3>🍏 Maçãs Frescas</h3>
-                <p>Colhidas à mão, com todo cuidado.</p>
-                <button onclick="compartilharWhatsApp('Maçãs Frescas')">🟢 Compartilhar</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contato" class="contato">
-        <h2>📞 Contato</h2>
-        <form id="form-contato">
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <div class="redes-sociais">
-            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Fazenda Alberto Vidal. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="js/scripts.js"></script>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Fazenda Alberto Vidal</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Produtos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <div class="video-container">
+      <!-- Vídeo incorporado do YouTube – substitua YOUR_VIDEO_ID pelo ID do vídeo desejado -->
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&controls=0&loop=1&playlist=YOUR_VIDEO_ID" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="hero-overlay">
+      <h1>Bem-vindo à Fazenda Alberto Vidal</h1>
+      <p>Produzindo o melhor da natureza para você</p>
+      <a href="products.html" class="btn">Conheça nossos produtos</a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Fazenda Alberto Vidal. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
